@@ -1,0 +1,28 @@
+/* ===========Logo=========== */
+
+.header__logo,
+.footer__logo {
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+}
+
+.logo {
+  color: #000000;
+
+  .logo__first-word {
+    color: var(--accent-color);
+  }
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  margin-right: 93px;
+}
+
+.footer__logo {
+  color: var(--primary-white-color);
+}
