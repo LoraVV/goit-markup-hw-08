@@ -143,6 +143,12 @@ ul {
 }
 
 /* ===========Navigation=========== */
+@media screen and (max-width: 767px) {
+  .header {
+    position: relative;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .header {
     border: 1px solid #ececec;
@@ -223,6 +229,9 @@ ul {
 @media screen and (max-width: 767px) {
   .menu {
     display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
     width: 100%;
     background-color: var(--primary-white-color);
     padding: 48px 40px;
@@ -437,6 +446,13 @@ ul {
   -o-transition: opacity 250ms var(--animation-timing-function), visibility 250ms var(--animation-timing-function);
   transition: opacity 250ms var(--animation-timing-function), visibility 250ms var(--animation-timing-function);
   /* z-index: 1; */
+  overflow-y: scroll;
+}
+
+@media screen and (max-width: 767px) {
+  .backdrop {
+    padding: 94px 15px;
+  }
 }
 
 /* when shown */

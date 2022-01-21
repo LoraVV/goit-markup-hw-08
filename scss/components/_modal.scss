@@ -11,6 +11,11 @@
   transition: opacity 250ms var(--animation-timing-function),
     visibility 250ms var(--animation-timing-function);
   /* z-index: 1; */
+  overflow-y: scroll;
+
+  @media screen and (max-width: 767px) {
+    padding: 94px 15px;
+  }
 }
 
 /* when shown */
@@ -41,6 +46,13 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+
+  @media screen and (max-width: 767px) {
+    // max-width: 450px;
+  }
+
+  @media screen and (min-width: 768px) {
+  }
 
   .modal-close {
     height: 30px;
