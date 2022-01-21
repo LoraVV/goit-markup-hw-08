@@ -23,5 +23,7 @@
 <symbol id="modal-no-cheсk" viewBox="0 0 34 32"><path d="M30.343 3.555v24.89h-26.549v-24.89h26.549zM30.343-0.001h-26.549c-2.087 0-3.793 1.6-3.793 3.557v24.89c0 1.956 1.707 3.557 3.793 3.557h26.549c2.087 0 3.793-1.6 3.793-3.557v-24.89c0-1.956-1.707-3.557-3.793-3.557z"></path></symbol>
 <symbol id="icon-telegram" viewBox="0 0 32 32"><path d="M32.007 0l-32.007 18.004 10.229 3.788 15.777-14.79-12 16.19 0.009 0.003-0.012-0.003v8.815l5.736-6.692 7.268 2.691 5-28.006z"></path></symbol>
 <symbol id="icon-ok" viewBox="0 0 42 32"><path fill="#fff" style="fill: var(--color1, #fff); stroke: var(--color1, #fff)" stroke="#fff" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.64" d="M6.264 15.206l-0.221-0.211-0.221 0.208-3.086 2.926 0.243 0.234 11.412 10.883 0.221-0.211 24.264-23.146-0.243-0.23-3.044-2.903-0.221 0.211-20.976 19.993-8.127-7.753z"></path>
+<symbol id="icon-menu" viewBox="0 0 48 32"><path d="M0 5.333v-5.335h48.011v5.335h-48.011zM0 18.668h48.011v-5.333h-48.011v5.333zM0 32.005h48.011v-5.335h-48.011v5.335z"></path>
+</symbol>
 </symbol>
 </defs></svg>
