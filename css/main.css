@@ -470,26 +470,31 @@ ul {
 }
 
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
   /* opacity: 1; */
-  -webkit-transform: translate(-50%, -50%) scale(1);
-      -ms-transform: translate(-50%, -50%) scale(1);
-          transform: translate(-50%, -50%) scale(1);
   -webkit-transition: -webkit-transform 250ms var(--animation-timing-function);
   transition: -webkit-transform 250ms var(--animation-timing-function);
   -o-transition: transform 250ms var(--animation-timing-function);
   transition: transform 250ms var(--animation-timing-function);
   transition: transform 250ms var(--animation-timing-function), -webkit-transform 250ms var(--animation-timing-function);
-  min-height: 581px;
-  min-width: 528px;
   padding: 40px;
   background-color: var(--primary-white-color);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   -webkit-border-radius: 4px;
           border-radius: 4px;
+}
+
+@media screen and (min-width: 1600px) {
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%) scale(1);
+        -ms-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
+    min-height: 581px;
+    min-width: 528px;
+  }
 }
 
 .modal .modal-close {
