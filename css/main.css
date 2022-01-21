@@ -284,6 +284,7 @@ ul {
   -webkit-transition: color 250ms var(--animation-timing-function);
   -o-transition: color 250ms var(--animation-timing-function);
   transition: color 250ms var(--animation-timing-function);
+  padding-bottom: 32px;
 }
 
 .nav-box__link:hover, .nav-box__link:focus {
@@ -294,7 +295,6 @@ ul {
   .nav-box__link {
     display: block;
     padding-top: 32px;
-    padding-bottom: 32px;
     font-size: 14px;
     line-height: 1.14;
   }
@@ -349,6 +349,34 @@ ul {
   }
 }
 
+.contacts-social {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media screen and (max-width: 767px) {
+  .contacts {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .contacts {
     display: -webkit-box;
@@ -373,20 +401,34 @@ ul {
 }
 
 .contacts__link {
+  font-size: 24px;
+  line-height: 1.17;
   fill: var(--primary-text-color);
   text-decoration: none;
   color: var(--primary-text-color);
   -webkit-transition: color 250ms var(--animation-timing-function), fill 250ms var(--animation-timing-function);
   -o-transition: color 250ms var(--animation-timing-function), fill 250ms var(--animation-timing-function);
   transition: color 250ms var(--animation-timing-function), fill 250ms var(--animation-timing-function);
+  padding-bottom: 60px;
 }
 
 .contacts__link:hover, .contacts__link:focus {
   color: var(--accent-color);
 }
 
+@media screen and (max-width: 767px) {
+  .contacts__link.tel {
+    font-size: 34px;
+    line-height: 1.18;
+    color: var(--accent-color);
+  }
+}
+
 @media screen and (min-width: 768px) {
   .contacts__link {
+    font-size: 12px;
+    line-height: 1.17;
+    color: var(--primary-text-color);
     padding-top: 32px;
     padding-bottom: 32px;
     font-size: 14px;
@@ -420,16 +462,37 @@ ul {
 
 .social-link {
   display: none;
+  font-size: 18px;
+  line-height: 1.22;
+  fill: var(--accent-color);
+  color: var(--accent-color);
 }
 
 @media screen and (max-width: 767px) {
   .social-link {
-    display: block;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
 .social-link__link {
   text-decoration: none;
+  position: relative;
+}
+
+.social-link__link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: block;
+  width: 2px;
+  height: 4px;
+  -webkit-border-radius: 2px 0;
+          border-radius: 2px 0;
+  background-color: var(--primary-text-color);
 }
 
 .backdrop {
@@ -447,12 +510,7 @@ ul {
   transition: opacity 250ms var(--animation-timing-function), visibility 250ms var(--animation-timing-function);
   /* z-index: 1; */
   overflow-y: scroll;
-}
-
-@media screen and (max-width: 767px) {
-  .backdrop {
-    padding: 94px 15px;
-  }
+  padding: 15;
 }
 
 /* when shown */
@@ -470,6 +528,7 @@ ul {
 }
 
 .modal {
+  position: relative;
   /* opacity: 1; */
   -webkit-transition: -webkit-transform 250ms var(--animation-timing-function);
   transition: -webkit-transform 250ms var(--animation-timing-function);
@@ -484,16 +543,23 @@ ul {
           border-radius: 4px;
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 530px) {
   .modal {
+    max-width: 460px;
+    width: 100%;
     position: absolute;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%) scale(1);
         -ms-transform: translate(-50%, -50%) scale(1);
             transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .modal {
     min-height: 581px;
-    min-width: 528px;
+    max-width: 528px;
   }
 }
 
@@ -729,6 +795,14 @@ ul {
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
+}
+
+@media screen and (max-width: 767px) {
+  .hero-box__title {
+    font-size: 26px;
+    line-height: 1.62;
+    text-align: center;
+  }
 }
 
 .overlay {
