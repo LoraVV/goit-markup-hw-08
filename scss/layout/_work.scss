@@ -3,9 +3,14 @@
 }
 
 .section__no-padding-top {
+  display: block;
   margin-bottom: 50px;
   padding-top: 0;
   padding-bottom: 0;
+
+  @media screen and (max-width: 1599px) {
+    display: none;
+  }
 }
 
 .works-list {

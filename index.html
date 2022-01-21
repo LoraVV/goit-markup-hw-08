@@ -21,6 +21,16 @@
         <div class="container container__header">
             <nav class="site-nav">
                 <a class="logo header__logo" href="/"><span class="logo__first-word">Web</span>Studio</a>
+                <div class="site-nav__burger">
+                    <div class="site-nav__line"></div>
+                    <div class="site-nav__line"></div>
+                    <div class="site-nav__line"></div>
+                </div>
+                <button type="button" class="site-nav__button">
+                    <svg class="" width="11" height="11">
+                        <use href="./images/sprite.svg#icon-Vectorx"></use>
+                    </svg>
+                </button>
 
                 <ul class="nav-box">
                     <li class="nav-box__item"><a class="nav-box__link nav-box-link__active" href="./index.html ">Студия</a></li>
@@ -30,14 +40,16 @@
             </nav>
 
             <ul class="contacts">
+                <li class="contacts__item icon-phone-wrap">
+                    <a class="contacts__link" href="tel:+380961111111 "><svg class="contacts__icon" width="10" height="16">
+                            <use href="images/sprite.svg#icon-phone"></use>
+                        </svg>+38 096 111 11 11</a>
+                </li>
+
                 <li class="contacts__item">
                     <a class="contacts__link mail" href="mailto:info@devstudio.com "><svg class="contacts__icon" width="16" height="12">
                             <use href="images/sprite.svg#icon-mail"></use>
                         </svg>info@devstudio.com</a></li>
-                <li class="contacts__item icon-phone-wrap">
-                    <a class="contacts__link" href="tel:+380961111111 "><svg class="contacts__icon" width="10" height="16">
-                            <use href="images/sprite.svg#icon-phone"></use>
-                        </svg>+38 096 111 11 11</a></li>
             </ul>
         </div>
     </header>

@@ -5,25 +5,33 @@
 }
 
 .container__header {
-  display: flex;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
 
 .site-nav {
-  display: flex;
-  align-items: center;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .nav-box {
-  display: flex;
-  align-items: center;
-  align-content: center;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    align-content: center;
+  }
 }
 
 .nav-box__item {
-  margin-left: auto;
+  @media screen and (min-width: 768px) {
+    margin-left: auto;
 
-  &:not(:last-child) {
-    margin-right: 50px;
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
   }
 }
 
@@ -85,10 +93,12 @@
 }
 
 .contacts {
-  display: flex;
-  align-items: center;
-  align-content: center;
-  margin-left: auto;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    margin-left: auto;
+  }
 }
 
 // .contact-item {
@@ -101,8 +111,6 @@
 }
 
 .contacts__link {
-  display: flex;
-  justify-content: center;
   fill: var(--primary-text-color);
   padding-top: 32px;
   padding-bottom: 32px;
@@ -114,6 +122,11 @@
   color: var(--primary-text-color);
   transition: color 250ms var(--animation-timing-function),
     fill 250ms var(--animation-timing-function);
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+  }
 
   &:hover,
   &:focus {

@@ -3,21 +3,29 @@
 }
 
 .footer__container {
-  display: flex;
-  flex-grow: 1;
-  align-items: baseline;
+  @media screen and (min-width: 1600px) {
+    display: flex;
+    flex-grow: 1;
+    align-items: baseline;
+  }
 }
 
 .footer-box {
-  margin-right: 70px;
+  @media screen and (min-width: 768px) {
+    margin-right: 70px;
+  }
 }
 
 .footer-box__list {
-  margin-top: 20px;
+  @media screen and (min-width: 768px) {
+    margin-top: 20px;
+  }
 }
 
 .footer-box__item:not(:last-child) {
-  margin-bottom: 9px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 9px;
+  }
 }
 
 .footer-box__address,
@@ -39,7 +47,6 @@
 }
 
 .footer-submit-box__title {
-  margin-bottom: 20px;
   font-family: Roboto;
   font-weight: 700;
   font-size: 14px;
@@ -47,6 +54,10 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-white-color);
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 20px;
+  }
 }
 
 .footer-submit-box__list {
@@ -86,10 +97,12 @@
 }
 
 .footer-form {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-end;
-  margin-left: 93px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    margin-left: 93px;
+  }
 }
 
 .footer-form__submit-email-box {
@@ -104,15 +117,19 @@
 }
 
 .footer-form__email {
-  display: flex;
-  align-items: flex-end;
   margin-top: 12px;
-  width: 358px;
+
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background: var(--title-bgc);
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: flex-end;
+    width: 358px;
+  }
 
   &::placeholder {
     font-size: 16px;
