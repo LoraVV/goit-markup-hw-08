@@ -27,4 +27,8 @@
 
 .footer__logo {
   color: var(--primary-white-color);
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 20px;
+  }
 }
