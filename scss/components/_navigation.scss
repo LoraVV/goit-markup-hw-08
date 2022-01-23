@@ -190,7 +190,7 @@
     flex-direction: column-reverse;
   }
 
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     padding-top: 32px;
     display: flex;
     align-items: center;
@@ -249,7 +249,7 @@
     justify-content: center;
   }
 
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     &.mail {
       margin-right: 30px;
     }

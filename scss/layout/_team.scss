@@ -28,7 +28,7 @@
   background-color: var(--primary-white-color);
 
   &:not(:last-child) {
-    @media screen and (max-width: 1599px) {
+    @media screen and (max-width: 1199px) {
       margin-bottom: 30px;
     }
   }
@@ -42,11 +42,16 @@
     }
   }
 
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     // width: 270px;
     width: calc((100% - 8 * 15px) / 4);
     margin: 15px;
   }
+}
+
+.team-list_img {
+  background-size: cover;
+  background-position: center;
 }
 
 .team-list__box {
