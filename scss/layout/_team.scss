@@ -3,7 +3,11 @@
 }
 
 .section-team {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
 
 .title-team {
@@ -45,7 +49,6 @@
   @media screen and (min-width: 1200px) {
     // width: 270px;
     width: calc((100% - 8 * 15px) / 4);
-    margin: 15px;
   }
 }
 
