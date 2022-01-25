@@ -88,7 +88,7 @@
 
 .footer-submit-box__list {
   display: flex;
-  flex-wrap: wrap;
+
   align-items: center;
   justify-content: center;
 
@@ -132,19 +132,19 @@
 
 .footer-form {
   @media screen and (min-width: 360px) {
-    margin-top: 60px;
   }
 
   @media screen and (max-width: 767px) {
     align-items: center;
     text-align: center;
     align-content: center;
+    flex-wrap: wrap;
+    margin-top: 60px;
   }
 
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: flex-end;
-    flex-wrap: wrap;
   }
 
   @media screen and (max-width: 1199px) {
@@ -153,15 +153,17 @@
 }
 
 .footer-form__title {
-  display: block;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--primary-white-color);
-  justify-content: center;
-  align-items: center;
+  @media screen and (min-width: 360px) {
+    display: block;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+    justify-content: center;
+    align-items: center;
+  }
 
   @media screen and (max-width: 767px) {
     display: flex;

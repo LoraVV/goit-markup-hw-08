@@ -1583,9 +1583,6 @@ ul {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
@@ -1654,12 +1651,6 @@ ul {
   height: 20px;
 }
 
-@media screen and (min-width: 360px) {
-  .footer-form {
-    margin-top: 60px;
-  }
-}
-
 @media screen and (max-width: 767px) {
   .footer-form {
     -webkit-box-align: center;
@@ -1670,6 +1661,10 @@ ul {
     -webkit-align-content: center;
         -ms-flex-line-pack: center;
             align-content: center;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    margin-top: 60px;
   }
 }
 
@@ -1683,9 +1678,6 @@ ul {
     -webkit-align-items: flex-end;
         -ms-flex-align: end;
             align-items: flex-end;
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
   }
 }
 
@@ -1699,22 +1691,24 @@ ul {
   }
 }
 
-.footer-form__title {
-  display: block;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--primary-white-color);
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+@media screen and (min-width: 360px) {
+  .footer-form__title {
+    display: block;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 @media screen and (max-width: 767px) {
