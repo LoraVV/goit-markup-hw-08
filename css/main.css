@@ -1249,8 +1249,8 @@ ul {
     width: -webkit-calc((100% - 4 * 15px) / 2);
     width: calc((100% - 4 * 15px) / 2);
   }
-  .team-list__item + .team-list__item {
-    margin-left: 30px;
+  .team-list__item:not(:last-child) {
+    margin: 15px;
   }
 }
 
@@ -1258,6 +1258,9 @@ ul {
   .team-list__item {
     width: -webkit-calc((100% - 8 * 15px) / 4);
     width: calc((100% - 8 * 15px) / 4);
+  }
+  .team-list__item + .team-list__item {
+    margin-left: 30px;
   }
 }
 
@@ -1286,6 +1289,7 @@ ul {
 
 .team-list__title {
   margin-bottom: 10px;
+  color: var(--title-text-color);
 }
 
 @media screen and (max-width: 767px) {
