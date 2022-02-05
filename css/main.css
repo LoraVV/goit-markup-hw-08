@@ -240,6 +240,14 @@ ul {
   }
 }
 
+.site-nav__icon {
+  z-index: 3;
+  position: fixed;
+  top: 15px;
+  right: 20px;
+  margin: 0;
+}
+
 .menu {
   font-weight: 500;
   letter-spacing: 0.02em;
@@ -387,33 +395,6 @@ ul {
   }
 }
 
-.contacts-social {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
-}
-
-@media screen and (max-width: 767px) {
-  .contacts {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .contacts {
     display: -webkit-box;
@@ -471,6 +452,9 @@ ul {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;

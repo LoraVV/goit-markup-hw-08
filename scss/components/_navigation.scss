@@ -54,6 +54,15 @@
   }
 }
 
+.site-nav__icon {
+  z-index: 3;
+  position: fixed;
+  top: 15px;
+  right: 20px;
+  margin: 0;
+}
+
+
 .menu {
   font-weight: 500;
   letter-spacing: 0.02em;
@@ -172,15 +181,14 @@
 }
 
 .contacts-social {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  // flex-direction: column;
+  // justify-content: space-around;
 }
 
 .contacts {
   @media screen and (max-width: 767px) {
-    display: flex;
-    flex-wrap: wrap;
+    // display: flex;
+    // flex-wrap: wrap;
   }
 
   @media screen and (min-width: 768px) {
@@ -205,6 +213,7 @@
 
 .contact-item {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   @media screen and (max-width: 767px) {
     &.tel {
@@ -230,6 +239,7 @@
     }
   }
 }
+
 
 .contacts__item:last-child {
   @media screen and (min-width: 1200px) {
