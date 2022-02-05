@@ -531,6 +531,13 @@ ul {
   line-height: 1.18;
 }
 
+@media screen and (max-width: 767px) {
+  .contacts__link.tel {
+    font-size: 34px;
+    line-height: 1.18;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .contacts__link {
     display: -webkit-box;
