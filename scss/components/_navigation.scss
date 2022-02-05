@@ -61,10 +61,11 @@
 
   @media screen and (max-width: 767px) {
     display: none;
-    position: absolute;
-    top: 100%;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
     left: 0;
-    width: 100%;
+    top: 0;
     background-color: var(--primary-white-color);
     padding: 48px 40px;
     font-size: 40px;
@@ -248,7 +249,17 @@
   &:hover,
   &:focus {
     color: var(--accent-color);
+    font-size: 34px;
+    line-height: 1.18;
   }
+
+  //  @media screen and (max-width: 767px) {
+  //   &.tel {
+
+  //     font-size: 34px;
+  //     line-height: 1.18;
+  //   }
+  //  }
 
   @media screen and (min-width: 768px) {
     display: flex;
