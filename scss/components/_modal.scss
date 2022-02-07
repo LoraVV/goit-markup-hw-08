@@ -63,16 +63,14 @@
     cursor: pointer;
     transition: fill 250ms var(--animation-timing-function);
     z-index: 10;
+    position: absolute;
+    top: 8px;
+    right: 8px;
 
     &:hover {
       fill: var(--accent-color);
     }
 
-    &.modal__close {
-      position: absolute;
-      top: 8px;
-      right: 8px;
-    }
   }
 
   .modal__cross {

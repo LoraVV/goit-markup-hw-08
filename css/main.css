@@ -695,16 +695,13 @@ ul {
   -o-transition: fill 250ms var(--animation-timing-function);
   transition: fill 250ms var(--animation-timing-function);
   z-index: 10;
+  position: absolute;
+  top: 8px;
+  right: 8px;
 }
 
 .modal .modal-close:hover {
   fill: var(--accent-color);
-}
-
-.modal .modal-close.modal__close {
-  position: absolute;
-  top: 8px;
-  right: 8px;
 }
 
 .modal .modal__cross {
